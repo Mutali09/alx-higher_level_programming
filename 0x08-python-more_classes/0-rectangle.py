@@ -3,4 +3,4 @@
 class Rectangle:
     def __str__(self):
         """Represent a rectangle."""
-        return (rectangle)
+        pass
