@@ -12,12 +12,13 @@ class Rectangle:
         number_of_instances = 0
 
     def __init__(self, width=0, height=0):
-        """Initializes a new Rectangle instance.
+        """Initializes a new Rectangle.
 
         Args:
-            width (int): The width of the rectangle. Defaults to 0.
-            height (int): The height of the rectangle. Defaults to 0.
+            width (int): The width of the rectangle.
+            height (int): The height of the rectangle.
         """
+        type(self).number_of_instances += 1
         self.width = width
         self.height = height
 
@@ -59,6 +60,7 @@ class Rectangle:
 
     def __str__(self):
         """Return the printable representation of the Rectangle.
+
         The rectangle is represented with # character.
         """
         if self.__width == 0 or self.__height == 0:
