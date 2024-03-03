@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# This script sends a request to a given URL using curl and displays the size of the response body in bytes.
+
 # Check if a URL argument is provided
 if [ $# -ne 1 ]; then
     echo "Usage: $0 <URL>"
